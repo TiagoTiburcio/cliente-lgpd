@@ -1,0 +1,24 @@
+body {
+    position: relative;
+}
+
+.divs_registros {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.divs_area_responsavel {
+    padding-bottom: 20px;
+    border-bottom: 2px solid blue;
+}
+
+.cetraliza_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_principal {
+    padding-bottom: 20px;
+}

@@ -6,66 +6,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <style>
-        body {
-            position: relative;
-        }
-
-        .divs_registros {
-            padding-top: 70px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid black;
-        }
-
-        .divs_area_responsavel {
-            padding-bottom: 20px;
-            border-bottom: 2px solid blue;
-        }
-
-        .cetraliza_nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;           
-        }
-        .nav_principal{
-            padding-bottom: 20px;
-        }
-    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.php">
-                    <img src="/img/seduc-porvir-dark.png" />
-                </a>
-            </li>
-            <li class="nav-item cetraliza_nav">
-                <a class="nav-link" href="#coleta">Coleta</a>
-            </li>
-            <li class="nav-item cetraliza_nav">
-                <a class="nav-link" href="#processamento">Processamento</a>
-            </li>
-            <li class="nav-item cetraliza_nav">
-                <a class="nav-link" href="#compartilhamento">Compartilhamento</a>
-            </li>
-            <li class="nav-item cetraliza_nav">
-                <a class="nav-link" href="#seguranca">Segurança</a>
-            </li>
-            <li class="nav-item cetraliza_nav">
-                <a class="nav-link" href="#descarte">Descarte</a>
-            </li>
-            <li class="nav-item cetraliza_nav">
-                <a class="nav-link" href="#outros">Outros</a>
-            </li>
-            <li class="nav-item cetraliza_nav">
-                <button type="button" id="btn-coleta-save" class="btn btn-success">SalvarRegistro</button>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.php">
+            <img src="./img/seduc-porvir-dark.png" />
+        </a>
+        <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php"><i class="fas fa-home" style="color: white;"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#coleta">Coleta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#processamento">Processamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#compartilhamento">Compartilhamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#seguranca">Segurança</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#descarte">Descarte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#outros">Outros</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" id="btn-coleta-save" class="btn btn-success">Salvar Registro</button>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <li><i class="fa fa-user" style="color: white;"> <?= ' Usuário Logado Sistema' ?></i></li>
+                <li><a href="sairlogin.php" style="color: white;"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+            </form>
+        </div>
     </nav>
     <div class="div_principal">
         <div id="coleta" class="container-fluid divs_registros">
